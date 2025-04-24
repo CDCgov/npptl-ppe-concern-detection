@@ -20,7 +20,7 @@ A zipped directory containing raw data, `00_data-raw/`, is available with the in
 - In your terminal, type `libretranslate --load-only en,es` to run the LibreTranslate API server, which we use to locally translate Spanish complaints into English (note: there is no space between `en` and `es`). You should see "Running on http://127.0.0.1:5000." Run all subsequent code in a separate terminal window.
 
 #### Clean data
-Run scripts in `01_clean_data/` in the following order.
+Run scripts in `01_clean-data/` in the following order.
 - `01_merge-naics.py` merges OSHA dataset with NAICS datasets to get descriptive industry sector titles.
 - `02_detect-language.py` detects the language of all complaints.
 - `03_translate-spanish-to-english.py` translates Spanish narratives into English. 
