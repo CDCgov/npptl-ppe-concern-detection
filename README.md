@@ -5,7 +5,7 @@ Code to accompany Payne and Haas, “Detecting PPE concerns in OSHA complaints u
 ## Repository organization
 
 ### Data 
-A zipped directory containing raw data, `00_data-raw/`, is available with the initial release. Download this directory to the repository and unzip. All raw data used are publicly available:
+A compressed directory containing raw data, `00_data-raw/`, is available with the initial release. Download this directory to the repository and decompress. All raw data used are publicly available:
 
 - [CDC: Weekly Rates of Laboratory-Confirmed COVID-19 Hospitalizations from the COVID-NET Surveillance System](https://data.cdc.gov/Public-Health-Surveillance/Weekly-Rates-of-Laboratory-Confirmed-COVID-19-Hosp/6jg4-xsqq/about_data)
 - [U.S. Census Bureau: North American Industry Classification System (NAICS)](https://www.census.gov/naics/)
