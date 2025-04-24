@@ -1,0 +1,26 @@
+channels:
+- conda-forge
+- bioconda
+dependencies:
+  - r-base=4.1.3
+  - r-tidyverse
+  - r-lubridate
+  - python=3.9.7
+  - accelerate
+  - evaluate
+  - ipykernel
+  - matplotlib
+  - nltk
+  - numpy
+  - openpyxl
+  - pandas
+  - plotly
+  - pytorch
+  - scikit-learn
+  - scipy
+  - seaborn
+  - transformers
+  - xlrd
+  - pip
+  - pip:
+      - libretranslate

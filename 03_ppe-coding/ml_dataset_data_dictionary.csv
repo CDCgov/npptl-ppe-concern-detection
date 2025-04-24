@@ -1,0 +1,23 @@
+﻿Variable,Type,Description,Values
+UPA.ID,string,[PRIMARY KEY] Unprogrammed Activity (UPA) identification code associated with the complaint (from OSHA source dataset).,.
+Hazard.Desc.Loc,string,Description of hazard and location.,.
+Hazard.Desc.Loc.lt,string,"Description of hazard and location, lowercased and translated into English (if applicable).",.
+Availability,integer,"PPE not provided or made available in sufficient quantity, for employees or non-employees.","0,1"
+NotWornE,integer,PPE not worn by employees.,"0,1"
+NotWornNE,integer,PPE not worn by non-employees.,"0,1"
+NotWornU,integer,PPE not worn by unspecified individual(s).,"0,1"
+WornIncorrectlyE,integer,PPE worn incorrectly by employees.,"0,1"
+WornIncorrectlyNE,integer,PPE worn incorrectly by non-employees.,"0,1"
+WornIncorrectlyU,integer,PPE worn incorrectly by unspecified individual(s).,"0,1"
+DisinfectionMaintenance,integer,"PPE not disinfected, improperly disinfected, or disinfected in a way that compromises its protective capabilities.","0,1"
+SizeFit,integer,PPE does not fit or the worker does not have access to properly fitting PPE.,"0,1"
+Expired,integer,PPE provided is expired.,"0,1"
+Counterfeit,integer,PPE provided may be counterfeit. ,"0,1"
+PPEDiscouragedProhibited,integer,Employer discourages or prohibits PPE use. ,"0,1"
+Physiological,integer,"Physiological, i.e., PPE causes physiological symptoms or discomfort, such as difficulty breathing, excessive moisture buildup, headaches, and overheating.","0,1"
+Training,integer,"Lack of training on PPE usage, selection, or storage.","0,1"
+RPP,integer,Respiratory Protection Program deficiencies.,"0,1"
+EnforceUse,integer,Employer fails to enforce PPE usage by employees or non-employees in the establishment.,"0,1"
+EnforceCorrectUse,integer,Employer fails to enforce the correct wearing of PPE by employees or non-employees in the establishment.,"0,1"
+FitTest,integer,"Fit testing not performed, performed improperly, or lack of alternatives provided for those failing.","0,1"
+CrossContamination,integer,"Cross-contamination, i.e., PPE used across multiple locations, tasks, or employees.","0,1"
