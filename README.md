@@ -38,13 +38,15 @@ At this point, the PPE concerns in distinct hazard narratives among sampled comp
 #### Fine-tune DistilBERT model and generate out-of-sample predictions
 Run scripts in `04_distilbert/` in the following order.
 
-- `distilbert_multilabel_cv_[0-9].py`: These scripts fine-tune DistilBERT models on the labeled dataset and record evaluation metrics over 150 train-test splits.
+- `distilbert_sim.py`: This Python script fine-tunes a DistilBERT model on one train-test split of the the labeled dataset and records evaluation metrics. This script requires one integer argument specifying the seed to use for the train-test split (`python distilbert_sim.py --seed <SEED_NUMBER>`). We run this script as an array job with 150 tasks on a high performance computing cluster using the task number as the `--seed` argument, so that 150 simulations are performed using seeds 0-149. Within the array job script, be sure to activate the conda environment using `source activate osha-covid-github`. Also be sure to request 2 slots per task to match the Python script.
+
 - `predict_oos_m[0-2].py`: Each of these prediction scripts uses one of the 150 previously fine-tuned models generate a set of out-of-sample predictions for all PPE-related complaints that were not among the 3,200 initially sampled. The three sets of out-of-sample predictions are combined via (entrywise) majority vote to generate one vector-valued label for each out-of-sample complaint.
 
 #### Create tables and figures summarizing results
 The directory `05_results/` contains code to produce the tables and figures in the paper.
 
-- `results_ml.ipynb` produces tables and figures summarizing the detection ability of the fine-tuned DistilBERT model. It also produces `04_distilbert/ppe_labeled.csv` which combines ML-labeled complaints and manually labeled (or inferred from manually labeled) complaints.
+- `process_results.r` processes ML results in preparation for plotting and analysis.
+- `results_ml.ipynb` produces tables and figures summarizing the detection ability of the fine-tuned DistilBERT model.
 - `results_trends.ipynb` produces trend analyses in the paper.
 
 ## Public Domain Standard Notice
