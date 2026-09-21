@@ -1,6 +1,6 @@
 # Description
 
-Code to accompany Payne and Haas (2025), “Detecting PPE concerns in OSHA complaints using machine learning to support infectious disease outbreak response.”
+Code to accompany [Payne and Haas (2026) “Detecting PPE concerns in OSHA complaints using machine learning to support infectious disease outbreak response.”](https://doi.org/10.1080/15459624.2025.2573665)
 
 ## Repository organization
 
